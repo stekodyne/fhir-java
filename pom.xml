@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>fhir</name>
+    <name>fhir-java</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
