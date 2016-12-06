@@ -159,7 +159,7 @@
               <xs:documentation xml:lang="en">Factors which may influence the applicability of coverage.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="school" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="school" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Name of school for over-aged dependents.</xs:documentation>
            </xs:annotation>
@@ -272,7 +272,7 @@
               <xs:documentation xml:lang="en">Reference to the program or plan identification, underwriter or payor.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="businessArrangement" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="businessArrangement" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The contract number of a business agreement which describes the terms and conditions.</xs:documentation>
            </xs:annotation>
@@ -282,7 +282,7 @@
               <xs:documentation xml:lang="en">The relationship of the patient to the subscriber.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="preAuthRef" minOccurs="0" maxOccurs="unbounded" type="string">
+          <xs:element name="preAuthRef" minOccurs="0" maxOccurs="unbounded" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A list of references from the Insurer to which these services pertain.</xs:documentation>
            </xs:annotation>

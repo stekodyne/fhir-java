@@ -59,7 +59,7 @@
               <xs:documentation xml:lang="en">The patient imaged in the study.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="uid" minOccurs="1" maxOccurs="1" type="oid">
+          <xs:element name="uid" minOccurs="1" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Formal identifier for the study.</xs:documentation>
            </xs:annotation>
@@ -119,7 +119,7 @@
               <xs:documentation xml:lang="en">Who read the study and interpreted the images or other content.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Institution-generated description or classification of the Study performed.</xs:documentation>
            </xs:annotation>
@@ -150,12 +150,12 @@
               <xs:documentation xml:lang="en">The modality of this series sequence.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="uid" minOccurs="1" maxOccurs="1" type="oid">
+          <xs:element name="uid" minOccurs="1" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Formal identifier for this series.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A description of the series.</xs:documentation>
            </xs:annotation>
@@ -211,22 +211,22 @@
               <xs:documentation xml:lang="en">The number of instance in the series.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="uid" minOccurs="1" maxOccurs="1" type="oid">
+          <xs:element name="uid" minOccurs="1" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Formal identifier for this image or other content.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="sopClass" minOccurs="1" maxOccurs="1" type="oid">
+          <xs:element name="sopClass" minOccurs="1" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">DICOM instance  type.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="type" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="type" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A human-friendly SOP Class name.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="title" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="title" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The description of the instance.</xs:documentation>
            </xs:annotation>

@@ -54,7 +54,7 @@
               <xs:documentation xml:lang="en">Identifier for the List assigned for business purposes outside the context of FHIR.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="title" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="title" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A label for the list assigned by the author.</xs:documentation>
            </xs:annotation>
@@ -99,7 +99,7 @@
               <xs:documentation xml:lang="en">How this list was prepared - whether it is a working list that is suitable for being maintained on an ongoing basis, or if it represents a snapshot of a list of items from another source, or whether it is a prepared list where items may be marked as added, modified or deleted.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="note" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="note" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Comments that apply to the overall list.</xs:documentation>
            </xs:annotation>

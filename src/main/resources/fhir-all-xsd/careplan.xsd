@@ -89,7 +89,7 @@
               <xs:documentation xml:lang="en">Identifies what &quot;kind&quot; of plan this is to support differentiation between multiple co-existing plans; e.g. &quot;Home health&quot;, &quot;psychiatric&quot;, &quot;asthma&quot;, &quot;disease management&quot;, &quot;wellness plan&quot;, etc.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A description of the scope and nature of the plan.</xs:documentation>
            </xs:annotation>
@@ -259,7 +259,7 @@
             </xs:annotation>
             <xs:element name="scheduledTiming" type="Timing"/>
             <xs:element name="scheduledPeriod" type="Period"/>
-            <xs:element name="scheduledString" type="string"/>
+            <xs:element name="scheduledString" type="string-primitive"/>
           </xs:choice>
           <xs:element name="location" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
@@ -288,7 +288,7 @@
               <xs:documentation xml:lang="en">Identifies the quantity expected to be supplied, administered or consumed by the subject.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">This provides a textual description of constraints on the intended activity occurrence, including relation to other activities.  It may also include objectives, pre-conditions and end-conditions.  Finally, it may convey specifics about the activity such as body site, method, route, etc.</xs:documentation>
            </xs:annotation>

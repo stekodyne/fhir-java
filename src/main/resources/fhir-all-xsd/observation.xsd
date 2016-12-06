@@ -102,7 +102,7 @@
             </xs:annotation>
             <xs:element name="valueQuantity" type="Quantity"/>
             <xs:element name="valueCodeableConcept" type="CodeableConcept"/>
-            <xs:element name="valueString" type="string"/>
+            <xs:element name="valueString" type="string-primitive"/>
             <xs:element name="valueRange" type="Range"/>
             <xs:element name="valueRatio" type="Ratio"/>
             <xs:element name="valueSampledData" type="SampledData"/>
@@ -121,7 +121,7 @@
               <xs:documentation xml:lang="en">The assessment made based on the result of the observation.  Intended as a simple compact code often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result. Otherwise known as abnormal flag.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="comments" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="comments" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">May include statements about significant, unexpected or unreliable values, or information about the source of the value where this may be relevant to the interpretation of the result.</xs:documentation>
            </xs:annotation>
@@ -192,7 +192,7 @@
               <xs:documentation xml:lang="en">The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="text" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="text" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of &quot;Negative&quot; or a list or table of 'normals'.</xs:documentation>
            </xs:annotation>
@@ -240,7 +240,7 @@
             </xs:annotation>
             <xs:element name="valueQuantity" type="Quantity"/>
             <xs:element name="valueCodeableConcept" type="CodeableConcept"/>
-            <xs:element name="valueString" type="string"/>
+            <xs:element name="valueString" type="string-primitive"/>
             <xs:element name="valueRange" type="Range"/>
             <xs:element name="valueRatio" type="Ratio"/>
             <xs:element name="valueSampledData" type="SampledData"/>

@@ -54,7 +54,7 @@
               <xs:documentation xml:lang="en">A unique identifier assigned to this immunization record.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="status" minOccurs="1" maxOccurs="1" type="code">
+          <xs:element name="status" minOccurs="1" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Indicates the current status of the vaccination event.</xs:documentation>
            </xs:annotation>
@@ -109,7 +109,7 @@
               <xs:documentation xml:lang="en">The service delivery location where the vaccine administration occurred.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="lotNumber" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="lotNumber" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Lot number of the  vaccine product.</xs:documentation>
            </xs:annotation>
@@ -217,7 +217,7 @@
               <xs:documentation xml:lang="en">Nominal position in a series.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Contains the description about the protocol under which the vaccine was administered.</xs:documentation>
            </xs:annotation>
@@ -227,7 +227,7 @@
               <xs:documentation xml:lang="en">Indicates the authority who published the protocol.  E.g. ACIP.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="series" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="series" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">One possible path to achieve presumed immunity against a disease - within the context of an authority.</xs:documentation>
            </xs:annotation>

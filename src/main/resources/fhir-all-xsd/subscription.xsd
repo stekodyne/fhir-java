@@ -49,7 +49,7 @@
     <xs:complexContent>
       <xs:extension base="DomainResource">
         <xs:sequence>
-          <xs:element name="criteria" minOccurs="1" maxOccurs="1" type="string">
+          <xs:element name="criteria" minOccurs="1" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The rules that the server should use to determine when to generate notifications for this subscription.</xs:documentation>
            </xs:annotation>
@@ -59,7 +59,7 @@
               <xs:documentation xml:lang="en">Contact details for a human to contact about the subscription. The primary use of this for system administrator troubleshooting.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="reason" minOccurs="1" maxOccurs="1" type="string">
+          <xs:element name="reason" minOccurs="1" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A description of why this subscription is defined.</xs:documentation>
            </xs:annotation>
@@ -69,7 +69,7 @@
               <xs:documentation xml:lang="en">The status of the subscription, which marks the server state for managing the subscription.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="error" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="error" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A record of the last error that occurred when the server processed a notification.</xs:documentation>
            </xs:annotation>
@@ -110,12 +110,12 @@
               <xs:documentation xml:lang="en">The uri that describes the actual end-point to send messages to.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="payload" minOccurs="1" maxOccurs="1" type="string">
+          <xs:element name="payload" minOccurs="1" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The mime type to send the payload in - either application/xml+fhir, or application/json+fhir. If the mime type is blank, then there is no payload in the notification, just a notification.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="header" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="header" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Additional headers / information to send as part of the notification.</xs:documentation>
            </xs:annotation>

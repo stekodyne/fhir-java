@@ -145,7 +145,7 @@
               <xs:documentation xml:lang="en">The required consistency (e.g. honey-thick, nectar-thick, thin, thickened.) of liquids or fluids served to the patient.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="instruction" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="instruction" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Free text or additional instructions or information pertaining to the oral diet.</xs:documentation>
            </xs:annotation>
@@ -208,7 +208,7 @@
               <xs:documentation xml:lang="en">The kind of nutritional supplement product required such as a high protein or pediatric clear liquid supplement.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="productName" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="productName" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The product or brand name of the nutritional supplement such as &quot;Acme Protein Shake&quot;.</xs:documentation>
            </xs:annotation>
@@ -223,7 +223,7 @@
               <xs:documentation xml:lang="en">The amount of the nutritional supplement to be given.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="instruction" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="instruction" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Free text or additional instructions or information pertaining to the oral supplement.</xs:documentation>
            </xs:annotation>
@@ -244,7 +244,7 @@
               <xs:documentation xml:lang="en">The type of enteral or infant formula such as an adult standard formula with fiber or a soy-based infant formula.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="baseFormulaProductName" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="baseFormulaProductName" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The product or brand name of the enteral or infant formula product such as &quot;ACME Adult Standard Formula&quot;.</xs:documentation>
            </xs:annotation>
@@ -254,7 +254,7 @@
               <xs:documentation xml:lang="en">Indicates the type of modular component such as protein, carbohydrate, fat or fiber to be provided in addition to or mixed with the base formula.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="additiveProductName" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="additiveProductName" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The product or brand name of the type of modular component to be added to the formula.</xs:documentation>
            </xs:annotation>
@@ -279,7 +279,7 @@
               <xs:documentation xml:lang="en">The maximum total quantity of formula that may be administered to a subject over the period of time, e.g. 1440 mL over 24 hours.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="administrationInstruction" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="administrationInstruction" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Free text formula administration, feeding instructions or additional instructions or information.</xs:documentation>
            </xs:annotation>

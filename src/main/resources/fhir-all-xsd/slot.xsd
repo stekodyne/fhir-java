@@ -84,7 +84,7 @@
               <xs:documentation xml:lang="en">This slot has already been overbooked, appointments are unlikely to be accepted for this time.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="comment" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="comment" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Comments on the slot to describe any extended information. Such as custom constraints on the slot.</xs:documentation>
            </xs:annotation>

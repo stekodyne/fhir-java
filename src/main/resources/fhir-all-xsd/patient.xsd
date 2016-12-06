@@ -69,7 +69,7 @@
               <xs:documentation xml:lang="en">A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="gender" minOccurs="0" maxOccurs="1" type="code">
+          <xs:element name="gender" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes.</xs:documentation>
            </xs:annotation>
@@ -169,7 +169,7 @@
               <xs:documentation xml:lang="en">Address for the contact person.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="gender" minOccurs="0" maxOccurs="1" type="code">
+          <xs:element name="gender" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Administrative Gender - the gender that the contact person is considered to have for administration and record keeping purposes.</xs:documentation>
            </xs:annotation>

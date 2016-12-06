@@ -59,12 +59,12 @@
               <xs:documentation xml:lang="en">Original request resource reference.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="outcome" minOccurs="0" maxOccurs="1" type="code">
+          <xs:element name="outcome" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Transaction status: error, complete.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="disposition" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="disposition" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A description of the status of the adjudication.</xs:documentation>
            </xs:annotation>
@@ -186,7 +186,7 @@
               <xs:documentation xml:lang="en">The note purpose: Print/Display.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="text" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="text" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The note text.</xs:documentation>
            </xs:annotation>

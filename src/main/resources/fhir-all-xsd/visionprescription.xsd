@@ -157,17 +157,17 @@
               <xs:documentation xml:lang="en">The recommended maximum wear period for the lens.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="color" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="color" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Special color or pattern.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="brand" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="brand" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Brand recommendations or restrictions.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="notes" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="notes" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Notes for special requirements such as coatings and lens materials.</xs:documentation>
            </xs:annotation>

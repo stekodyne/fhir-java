@@ -69,17 +69,17 @@
               <xs:documentation xml:lang="en">Status of the Device availability.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="manufacturer" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="manufacturer" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A name of the manufacturer.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="model" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="model" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The &quot;model&quot; is an identifier assigned by the manufacturer to identify the product by its type. This number is shared by the all devices sold as the same type.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="version" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="version" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The version of the device, if the device has multiple releases under the same model, or if the device is software or carries firmware.</xs:documentation>
            </xs:annotation>
@@ -94,12 +94,12 @@
               <xs:documentation xml:lang="en">The date and time beyond which this device is no longer valid or should not be used (if applicable).</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="udi" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="udi" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">United States Food and Drug Administration mandated Unique Device Identifier (UDI). Use the human readable information (the content that the user sees, which is sometimes different to the exact syntax represented in the barcode)  - see http://www.fda.gov/MedicalDevices/DeviceRegulationandGuidance/UniqueDeviceIdentification/default.htm.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="lotNumber" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="lotNumber" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Lot number assigned by the manufacturer.</xs:documentation>
            </xs:annotation>

@@ -18,4 +18,17 @@
         <java.version>1.8</java.version>
     </properties>
 
+    <distributionManagement>
+        <repository>
+            <id>artifactory-releases</id>
+            <name>libs-releases</name>
+            <url>http://10.255.242.29:8081/artifactory/libs-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>artifactory-snapshots</id>
+            <name>libs-snapshots</name>
+            <url>http://10.255.242.29:8081/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 </project>

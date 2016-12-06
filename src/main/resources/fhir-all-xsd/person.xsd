@@ -64,7 +64,7 @@
               <xs:documentation xml:lang="en">A contact detail for the person, e.g. a telephone number or an email address.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="gender" minOccurs="0" maxOccurs="1" type="code">
+          <xs:element name="gender" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Administrative Gender.</xs:documentation>
            </xs:annotation>

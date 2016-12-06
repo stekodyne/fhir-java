@@ -54,17 +54,17 @@
               <xs:documentation xml:lang="en">An absolute URL that is used to identify this Test Script. This SHALL be a URL, SHOULD be globally unique, and SHOULD be an address at which this Test Script is (or will be) published.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="version" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="version" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The identifier that is used to identify this version of the TestScript. This is an arbitrary value managed by the TestScript author manually.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string">
+          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A free text natural language name identifying the TestScript.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="status" minOccurs="1" maxOccurs="1" type="code">
+          <xs:element name="status" minOccurs="1" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The status of the TestScript.</xs:documentation>
            </xs:annotation>
@@ -79,7 +79,7 @@
               <xs:documentation xml:lang="en">This TestScript was authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="publisher" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="publisher" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The name of the individual or organization that published the Test Script.</xs:documentation>
            </xs:annotation>
@@ -94,7 +94,7 @@
               <xs:documentation xml:lang="en">The date this version of the test tcript was published. The date must change when the business version changes, if it does, and it must change if the status code changes. In addition, it should change when the substantive content of the test cases change.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A free text natural language description of the TestScript and its use.</xs:documentation>
            </xs:annotation>
@@ -104,12 +104,12 @@
               <xs:documentation xml:lang="en">The content was developed with a focus and intent of supporting the contexts that are listed. These terms may be used to assist with indexing and searching of Test Scripts.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="requirements" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="requirements" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Explains why this Test Script is needed and why it's been constrained as it has.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="copyright" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="copyright" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A copyright statement relating to the Test Script and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the details of the constraints and mappings.</xs:documentation>
            </xs:annotation>
@@ -165,7 +165,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The name of an individual to contact regarding the Test Script.</xs:documentation>
            </xs:annotation>
@@ -212,7 +212,7 @@
               <xs:documentation xml:lang="en">URL to a particular requirement or feature within the FHIR specification.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Short description of the link.</xs:documentation>
            </xs:annotation>
@@ -238,7 +238,7 @@
               <xs:documentation xml:lang="en">Whether or not the test execution will validate the given capabilities of the server in order for this test script to execute.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Description of the capabilities that this test script is requiring the server to support.</xs:documentation>
            </xs:annotation>
@@ -295,22 +295,22 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string">
+          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Descriptive name for this variable.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="headerField" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="headerField" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Will be used to grab the HTTP header field value from the headers that sourceId is pointing to.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="path" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="path" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">XPath or JSONPath against the fixture body.  When variables are defined, either headerField must be specified or path, but not both.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="sourceId" minOccurs="0" maxOccurs="1" type="id">
+          <xs:element name="sourceId" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Fixture to evaluate the XPath/JSONPath expression or the headerField  against within this variable.</xs:documentation>
            </xs:annotation>
@@ -373,17 +373,17 @@
               <xs:documentation xml:lang="en">Server interaction or operation type.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="resource" minOccurs="0" maxOccurs="1" type="code">
+          <xs:element name="resource" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The type of the resource.  See http://hl7-fhir.github.io/resourcelist.html.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="label" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="label" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The label would be used for tracking/logging purposes by test engines.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The description would be used by test engines for tracking and reporting purposes.</xs:documentation>
            </xs:annotation>
@@ -408,7 +408,7 @@
               <xs:documentation xml:lang="en">Whether or not to implicitly send the request url in encoded format. The default is true to match the standard RESTful client behavior. Set to false when communicating with a server that does not support encoded url paths.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="params" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="params" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Path plus parameters after [type].  Used to set parts of the request URL explicitly.</xs:documentation>
            </xs:annotation>
@@ -418,22 +418,22 @@
               <xs:documentation xml:lang="en">Header elements would be used to set HTTP headers.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="responseId" minOccurs="0" maxOccurs="1" type="id">
+          <xs:element name="responseId" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The fixture id (maybe new) to map to the response.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="sourceId" minOccurs="0" maxOccurs="1" type="id">
+          <xs:element name="sourceId" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The id of the fixture used as the body of a PUT or POST request.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="targetId" minOccurs="0" maxOccurs="1" type="id">
+          <xs:element name="targetId" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Id of fixture used for extracting the [id],  [type], and [vid] for GET requests.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="url" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="url" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Complete request URL.</xs:documentation>
            </xs:annotation>
@@ -449,12 +449,12 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="field" minOccurs="1" maxOccurs="1" type="string">
+          <xs:element name="field" minOccurs="1" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The HTTP header field e.g. &quot;Accept&quot;.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="value" minOccurs="1" maxOccurs="1" type="string">
+          <xs:element name="value" minOccurs="1" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The value of the header e.g. &quot;application/xml&quot;.</xs:documentation>
            </xs:annotation>
@@ -470,12 +470,12 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="label" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="label" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The label would be used for tracking/logging purposes by test engines.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The description would be used by test engines for tracking and reporting purposes.</xs:documentation>
            </xs:annotation>
@@ -485,12 +485,12 @@
               <xs:documentation xml:lang="en">The direction to use for the assertion.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="compareToSourceId" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="compareToSourceId" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Id of fixture used to compare the &quot;sourceId/path&quot; evaluations to.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="compareToSourcePath" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="compareToSourcePath" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">XPath or JSONPath expression against fixture used to compare the &quot;sourceId/path&quot; evaluations to.</xs:documentation>
            </xs:annotation>
@@ -500,12 +500,12 @@
               <xs:documentation xml:lang="en">The content-type or mime-type to use for RESTful operation in the 'Content-Type' header.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="headerField" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="headerField" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The HTTP header field name e.g. 'Location'.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="minimumId" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="minimumId" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The ID of a fixture.  Asserts that the response contains at a minimumId the fixture specified by minimumId.</xs:documentation>
            </xs:annotation>
@@ -520,12 +520,12 @@
               <xs:documentation xml:lang="en">The operator type.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="path" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="path" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The XPath or JSONPath expression to be evaluated against the fixture representing the response received from server.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="resource" minOccurs="0" maxOccurs="1" type="code">
+          <xs:element name="resource" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The type of the resource.  See http://hl7-fhir.github.io/resourcelist.html.</xs:documentation>
            </xs:annotation>
@@ -535,22 +535,22 @@
               <xs:documentation xml:lang="en">okay | created | noContent | notModified | bad | forbidden | notFound | methodNotAllowed | conflict | gone | preconditionFailed | unprocessable.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="responseCode" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="responseCode" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The value of the HTTP response code to be tested.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="sourceId" minOccurs="0" maxOccurs="1" type="id">
+          <xs:element name="sourceId" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Fixture to evaluate the XPath/JSONPath expression or the headerField  against.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="validateProfileId" minOccurs="0" maxOccurs="1" type="id">
+          <xs:element name="validateProfileId" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The ID of the Profile to validate against.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="value" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="value" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The value to compare to.</xs:documentation>
            </xs:annotation>
@@ -571,12 +571,12 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The name of this test used for tracking/logging purposes by test engines.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A short description of the test used by test engines for tracking and reporting purposes.</xs:documentation>
            </xs:annotation>

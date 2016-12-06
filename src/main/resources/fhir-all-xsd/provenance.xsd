@@ -177,7 +177,7 @@
               <xs:documentation xml:lang="en">Identity of the  Entity used. May be a logical or physical uri and maybe absolute or relative.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="display" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="display" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Human-readable description of the entity.</xs:documentation>
            </xs:annotation>

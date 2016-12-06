@@ -54,17 +54,17 @@
               <xs:documentation xml:lang="en">An absolute URL that is used to identify this implementation guide when it is referenced in a specification, model, design or an instance. This SHALL be a URL, SHOULD be globally unique, and SHOULD be an address at which this implementation guide is (or will be) published.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="version" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="version" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The identifier that is used to identify this version of the Implementation Guide when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the Implementation Guide author manually.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string">
+          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A free text natural language name identifying the Implementation Guide.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="status" minOccurs="1" maxOccurs="1" type="code">
+          <xs:element name="status" minOccurs="1" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The status of the Implementation Guide.</xs:documentation>
            </xs:annotation>
@@ -74,7 +74,7 @@
               <xs:documentation xml:lang="en">This Implementation Guide was authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="publisher" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="publisher" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The name of the individual or organization that published the implementation guide.</xs:documentation>
            </xs:annotation>
@@ -89,7 +89,7 @@
               <xs:documentation xml:lang="en">The date this version of the implementation guide was published. The date must change when the business version changes, if it does, and it must change if the status code changes. In addition, it should change when the substantive content of the implementation guide changes.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A free text natural language description of the Implementation Guide and its use.</xs:documentation>
            </xs:annotation>
@@ -99,12 +99,12 @@
               <xs:documentation xml:lang="en">The content was developed with a focus and intent of supporting the contexts that are listed. These terms may be used to assist with indexing and searching of implementation guides. The most common use of this element is to represent the country / jurisdiction for which this implementation guide was defined.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="copyright" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="copyright" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A copyright statement relating to the implementation guide and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the details of the constraints and mappings.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="fhirVersion" minOccurs="0" maxOccurs="1" type="id">
+          <xs:element name="fhirVersion" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The version of the FHIR specification on which this ImplementationGuide is based - this is the formal version of the specification, without the revision number, e.g. [publication].[major].[minor], which is 1.0.2 for this version.</xs:documentation>
            </xs:annotation>
@@ -145,7 +145,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The name of an individual to contact regarding the implementation guide.</xs:documentation>
            </xs:annotation>
@@ -187,12 +187,12 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string">
+          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The name for the group, as used in page.package.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Human readable text describing the package.</xs:documentation>
            </xs:annotation>
@@ -218,17 +218,17 @@
               <xs:documentation xml:lang="en">Why the resource is included in the guide.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A description of the reason that a resource has been included in the implementation guide.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="acronym" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="acronym" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A short code that may be used to identify the resource throughout the implementation guide.</xs:documentation>
            </xs:annotation>
@@ -256,7 +256,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="type" minOccurs="1" maxOccurs="1" type="code">
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The type of resource that all instances must conform to.</xs:documentation>
            </xs:annotation>
@@ -282,7 +282,7 @@
               <xs:documentation xml:lang="en">The source address for the page.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string">
+          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">A short name used to represent this page in navigational structures such as table of contents, bread crumbs, etc.</xs:documentation>
            </xs:annotation>
@@ -292,17 +292,17 @@
               <xs:documentation xml:lang="en">The kind of page that this is. Some pages are autogenerated (list, example), and other kinds are of interest so that tools can navigate the user to the page of interest.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="type" minOccurs="0" maxOccurs="unbounded" type="code">
+          <xs:element name="type" minOccurs="0" maxOccurs="unbounded" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">For constructed pages, what kind of resources to include in the list.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="package" minOccurs="0" maxOccurs="unbounded" type="string">
+          <xs:element name="package" minOccurs="0" maxOccurs="unbounded" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">For constructed pages, a list of packages to include in the page (or else empty for everything).</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="format" minOccurs="0" maxOccurs="1" type="code">
+          <xs:element name="format" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The format of the page.</xs:documentation>
            </xs:annotation>

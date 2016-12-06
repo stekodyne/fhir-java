@@ -54,7 +54,7 @@
               <xs:documentation xml:lang="en">This records identifiers associated with this question set that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="version" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="version" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The version number assigned by the publisher for business reasons.  It may remain the same when the resource is updated.</xs:documentation>
            </xs:annotation>
@@ -69,7 +69,7 @@
               <xs:documentation xml:lang="en">The date that this questionnaire was last changed.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="publisher" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="publisher" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Organization or person responsible for developing and maintaining the questionnaire.</xs:documentation>
            </xs:annotation>
@@ -79,7 +79,7 @@
               <xs:documentation xml:lang="en">Contact details to assist a user in finding and communicating with the publisher.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="subjectType" minOccurs="0" maxOccurs="unbounded" type="code">
+          <xs:element name="subjectType" minOccurs="0" maxOccurs="unbounded" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Identifies the types of subjects that can be the subject of the questionnaire.</xs:documentation>
            </xs:annotation>
@@ -100,12 +100,12 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="linkId" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="linkId" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">An identifier that is unique within the Questionnaire allowing linkage to the equivalent group in a QuestionnaireResponse resource.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="title" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="title" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The human-readable name for this section of the questionnaire.</xs:documentation>
            </xs:annotation>
@@ -115,7 +115,7 @@
               <xs:documentation xml:lang="en">Identifies a how this group of questions is known in a particular terminology such as LOINC.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="text" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="text" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Additional text for the group, used for display purposes.</xs:documentation>
            </xs:annotation>
@@ -151,7 +151,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="linkId" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="linkId" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">An identifier that is unique within the questionnaire allowing linkage to the equivalent group in a [[[QuestionnaireResponse]]] resource.</xs:documentation>
            </xs:annotation>
@@ -161,7 +161,7 @@
               <xs:documentation xml:lang="en">Identifies a how this question is known in a particular terminology such as LOINC.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="text" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="text" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">The actual question as shown to the user to prompt them for an answer.</xs:documentation>
            </xs:annotation>

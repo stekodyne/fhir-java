@@ -54,7 +54,7 @@
               <xs:documentation xml:lang="en">Unique identifier used to reference the account.  May or may not be intended for human use (e.g. credit card number).</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Name used for the account when displaying it to humans in reports, etc.</xs:documentation>
            </xs:annotation>
@@ -99,7 +99,7 @@
               <xs:documentation xml:lang="en">Indicates the organization, department, etc. with responsibility for the account.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
             <xs:annotation>
               <xs:documentation xml:lang="en">Provides additional information about what the account tracks and how it is used.</xs:documentation>
            </xs:annotation>
