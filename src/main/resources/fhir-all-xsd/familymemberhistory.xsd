@@ -69,7 +69,7 @@
               <xs:documentation xml:lang="en">A code specifying a state of a Family Member History record.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">This will either be a name or a description; e.g. &quot;Aunt Susan&quot;, &quot;my cousin with the red hair&quot;.</xs:documentation>
            </xs:annotation>
@@ -79,7 +79,7 @@
               <xs:documentation xml:lang="en">The type of relationship this person has to the patient (father, mother, brother etc.).</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="gender" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="gender" minOccurs="0" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">Administrative Gender - the gender that the relative is considered to have for administration and record keeping purposes.</xs:documentation>
            </xs:annotation>
@@ -90,7 +90,7 @@
             </xs:annotation>
             <xs:element name="bornPeriod" type="Period"/>
             <xs:element name="bornDate" type="date"/>
-            <xs:element name="bornString" type="string-primitive"/>
+            <xs:element name="bornString" type="string"/>
           </xs:choice>
           <xs:choice minOccurs="0" maxOccurs="1" >
             <xs:annotation>
@@ -98,7 +98,7 @@
             </xs:annotation>
             <xs:element name="ageQuantity" type="Age"/>
             <xs:element name="ageRange" type="Range"/>
-            <xs:element name="ageString" type="string-primitive"/>
+            <xs:element name="ageString" type="string"/>
           </xs:choice>
           <xs:choice minOccurs="0" maxOccurs="1" >
             <xs:annotation>
@@ -108,7 +108,7 @@
             <xs:element name="deceasedQuantity" type="Age"/>
             <xs:element name="deceasedRange" type="Range"/>
             <xs:element name="deceasedDate" type="date"/>
-            <xs:element name="deceasedString" type="string-primitive"/>
+            <xs:element name="deceasedString" type="string"/>
           </xs:choice>
           <xs:element name="note" minOccurs="0" maxOccurs="1" type="Annotation">
             <xs:annotation>
@@ -148,7 +148,7 @@
             <xs:element name="onsetQuantity" type="Age"/>
             <xs:element name="onsetRange" type="Range"/>
             <xs:element name="onsetPeriod" type="Period"/>
-            <xs:element name="onsetString" type="string-primitive"/>
+            <xs:element name="onsetString" type="string"/>
           </xs:choice>
           <xs:element name="note" minOccurs="0" maxOccurs="1" type="Annotation">
             <xs:annotation>

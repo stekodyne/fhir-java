@@ -105,17 +105,17 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="linkId" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="linkId" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Identifies the group from the Questionnaire that corresponds to this group in the QuestionnaireResponse resource.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="title" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="title" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Text that is displayed above the contents of the group.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="text" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="text" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Additional text for the group, used for display purposes.</xs:documentation>
            </xs:annotation>
@@ -146,12 +146,12 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="linkId" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="linkId" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Identifies the question from the Questionnaire that corresponds to this question in the QuestionnaireResponse resource.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="text" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="text" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The actual question as shown to the user to prompt them for an answer.</xs:documentation>
            </xs:annotation>
@@ -183,7 +183,7 @@
             <xs:element name="valueDateTime" type="dateTime"/>
             <xs:element name="valueInstant" type="instant"/>
             <xs:element name="valueTime" type="time"/>
-            <xs:element name="valueString" type="string-primitive"/>
+            <xs:element name="valueString" type="string"/>
             <xs:element name="valueUri" type="uri"/>
             <xs:element name="valueAttachment" type="Attachment"/>
             <xs:element name="valueCoding" type="Coding"/>

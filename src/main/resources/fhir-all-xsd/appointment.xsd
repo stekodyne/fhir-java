@@ -74,7 +74,7 @@
               <xs:documentation xml:lang="en">The priority of the appointment. Can be used to make informed decisions if needing to re-prioritize appointments. (The iCal Standard specifies 0 as undefined, 1 as highest, 9 as lowest priority).</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The brief description of the appointment as would be shown on a subject line in a meeting request, or appointment list. Detailed or expanded information should be put in the comment field.</xs:documentation>
            </xs:annotation>
@@ -99,7 +99,7 @@
               <xs:documentation xml:lang="en">The slot that this appointment is filling. If provided then the schedule will not be provided as slots are not recursive, and the start/end values MUST be the same as from the slot.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="comment" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="comment" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Additional comments about the appointment.</xs:documentation>
            </xs:annotation>

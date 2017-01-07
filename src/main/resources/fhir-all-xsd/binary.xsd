@@ -49,7 +49,7 @@
     <xs:complexContent>
       <xs:extension base="Resource">
         <xs:sequence>
-          <xs:element name="contentType" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="contentType" minOccurs="1" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">MimeType of the binary content represented as a standard MimeType (BCP 13).</xs:documentation>
            </xs:annotation>

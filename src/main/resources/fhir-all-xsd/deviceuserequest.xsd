@@ -81,7 +81,7 @@
               <xs:documentation xml:lang="en">Reason or justification for the use of this device.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="notes" minOccurs="0" maxOccurs="unbounded" type="string-primitive">
+          <xs:element name="notes" minOccurs="0" maxOccurs="unbounded" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Details about this request that were not represented at all or sufficiently in one of the attributes provided in a class. These may include for example a comment, an instruction, or a note associated with the statement.</xs:documentation>
            </xs:annotation>

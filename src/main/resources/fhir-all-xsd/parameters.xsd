@@ -65,7 +65,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The name of the parameter (reference to the operation definition).</xs:documentation>
            </xs:annotation>
@@ -79,15 +79,15 @@
             <xs:element name="valueDecimal" type="decimal"/>
             <xs:element name="valueBase64Binary" type="base64Binary"/>
             <xs:element name="valueInstant" type="instant"/>
-            <xs:element name="valueString" type="string-primitive"/>
+            <xs:element name="valueString" type="string"/>
             <xs:element name="valueUri" type="uri"/>
             <xs:element name="valueDate" type="date"/>
             <xs:element name="valueDateTime" type="dateTime"/>
             <xs:element name="valueTime" type="time"/>
-            <xs:element name="valueCode" type="string-primitive"/>
-            <xs:element name="valueOid" type="string-primitive"/>
+            <xs:element name="valueCode" type="code"/>
+            <xs:element name="valueOid" type="oid"/>
             <xs:element name="valueUuid" type="uuid"/>
-            <xs:element name="valueId" type="string-primitive"/>
+            <xs:element name="valueId" type="id"/>
             <xs:element name="valueUnsignedInt" type="unsignedInt"/>
             <xs:element name="valuePositiveInt" type="positiveInt"/>
             <xs:element name="valueMarkdown" type="markdown"/>

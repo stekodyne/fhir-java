@@ -49,7 +49,7 @@
     <xs:complexContent>
       <xs:extension base="DomainResource">
         <xs:sequence>
-          <xs:element name="uid" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="uid" minOccurs="1" maxOccurs="1" type="oid">
             <xs:annotation>
               <xs:documentation xml:lang="en">Instance UID of the DICOM KOS SOP Instances represented in this resource.</xs:documentation>
            </xs:annotation>
@@ -64,7 +64,7 @@
               <xs:documentation xml:lang="en">The reason for, or significance of, the selection of objects referenced in the resource.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Text description of the DICOM SOP instances selected in the ImagingObjectSelection. This should be aligned with the content of the title element, and can provide further explanation of the SOP instances in the selection.</xs:documentation>
            </xs:annotation>
@@ -95,7 +95,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="uid" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="uid" minOccurs="1" maxOccurs="1" type="oid">
             <xs:annotation>
               <xs:documentation xml:lang="en">Study instance UID of the SOP instances in the selection.</xs:documentation>
            </xs:annotation>
@@ -126,7 +126,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="uid" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="uid" minOccurs="0" maxOccurs="1" type="oid">
             <xs:annotation>
               <xs:documentation xml:lang="en">Series instance UID of the SOP instances in the selection.</xs:documentation>
            </xs:annotation>
@@ -152,12 +152,12 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="sopClass" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="sopClass" minOccurs="1" maxOccurs="1" type="oid">
             <xs:annotation>
               <xs:documentation xml:lang="en">SOP class UID of the selected instance.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="uid" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="uid" minOccurs="1" maxOccurs="1" type="oid">
             <xs:annotation>
               <xs:documentation xml:lang="en">SOP Instance UID of the selected instance.</xs:documentation>
            </xs:annotation>

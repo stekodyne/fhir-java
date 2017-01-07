@@ -89,12 +89,12 @@
               <xs:documentation xml:lang="en">Identifies the source system, application, or software that produced the document manifest.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="status" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="status" minOccurs="1" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">The status of this document manifest.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Human-readable description of the source document. This is sometimes known as the &quot;title&quot;.</xs:documentation>
            </xs:annotation>

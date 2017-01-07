@@ -113,7 +113,7 @@
               <xs:documentation xml:lang="en">The device used in administering the medication to the patient.  For example, a particular infusion pump.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="note" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="note" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Extra information about the medication administration that is not conveyed by the other attributes.</xs:documentation>
            </xs:annotation>
@@ -134,7 +134,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="text" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="text" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Free text dosage instructions can be used for cases where the instructions are too complex to code. When coded instructions are present, the free text instructions may still be present for display to humans taking or administering the medication.</xs:documentation>
            </xs:annotation>

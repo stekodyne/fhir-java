@@ -80,12 +80,12 @@
               <xs:documentation xml:lang="en">Additional details about the error. This may be a text description of the error, or a system code that identifies the error.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="diagnostics" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="diagnostics" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Additional diagnostic information about the issue.  Typically, this may be a description of how a value is erroneous, or a stack dump to help trace the issue.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="location" minOccurs="0" maxOccurs="unbounded" type="string-primitive">
+          <xs:element name="location" minOccurs="0" maxOccurs="unbounded" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">A simple XPath limited to element names, repetition indicators and the default child access that identifies one of the elements in the resource that caused this issue to be raised.</xs:documentation>
            </xs:annotation>

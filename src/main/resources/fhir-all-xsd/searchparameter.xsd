@@ -54,12 +54,12 @@
               <xs:documentation xml:lang="en">An absolute URL that is used to identify this search parameter when it is referenced in a specification, model, design or an instance. This SHALL be a URL, SHOULD be globally unique, and SHOULD be an address at which this search parameter is (or will be) published.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">A free text natural language name identifying the search parameter.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="status" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="status" minOccurs="0" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">The status of this search parameter definition.</xs:documentation>
            </xs:annotation>
@@ -69,7 +69,7 @@
               <xs:documentation xml:lang="en">A flag to indicate that this search parameter definition is authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="publisher" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="publisher" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The name of the individual or organization that published the search parameter.</xs:documentation>
            </xs:annotation>
@@ -84,32 +84,32 @@
               <xs:documentation xml:lang="en">The date  (and optionally time) when the search parameter definition was published. The date must change when the business version changes, if it does, and it must change if the status code changes. In addition, it should change when the substantive content of the search parameter changes.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="requirements" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="requirements" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The Scope and Usage that this search parameter was created to meet.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="code" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="code" minOccurs="1" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">The code used in the URL or the parameter name in a parameters resource for this search parameter.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="base" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="base" minOccurs="1" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">The base resource type that this search parameter refers to.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="type" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">The type of value a search parameter refers to, and how the content is interpreted.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="description" minOccurs="1" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">A description of the search parameters and how it used.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="xpath" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="xpath" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">An XPath expression that returns a set of elements for the search parameter.</xs:documentation>
            </xs:annotation>
@@ -119,7 +119,7 @@
               <xs:documentation xml:lang="en">How the search parameter relates to the set of elements returned by evaluating the xpath query.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="target" minOccurs="0" maxOccurs="unbounded" type="string-primitive">
+          <xs:element name="target" minOccurs="0" maxOccurs="unbounded" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">Types of resource (if a resource is referenced).</xs:documentation>
            </xs:annotation>
@@ -135,7 +135,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The name of an individual to contact regarding the search parameter.</xs:documentation>
            </xs:annotation>

@@ -85,7 +85,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="relation" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="relation" minOccurs="1" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">A name which details the functional use for this link - see [[http://www.iana.org/assignments/link-relations/link-relations.xhtml]].</xs:documentation>
            </xs:annotation>
@@ -178,7 +178,7 @@
               <xs:documentation xml:lang="en">The URL for this entry, relative to the root (the address to which the request is posted).</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="ifNoneMatch" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="ifNoneMatch" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">If the ETag values match, return a 304 Not modified status. See the API documentation for [&quot;Conditional Read&quot;](http.html#cread).</xs:documentation>
            </xs:annotation>
@@ -188,12 +188,12 @@
               <xs:documentation xml:lang="en">Only perform the operation if the last updated date matches. See the API documentation for [&quot;Conditional Read&quot;](http.html#cread).</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="ifMatch" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="ifMatch" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Only perform the operation if the Etag value matches. For more information, see the API section [&quot;Managing Resource Contention&quot;](http.html#concurrency).</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="ifNoneExist" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="ifNoneExist" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Instruct the server not to perform the create if a specified resource already exists. For further information, see the API documentation for [&quot;Conditional Create&quot;](http.html#ccreate). This is just the query portion of the URL - what follows the &quot;?&quot; (not including the &quot;?&quot;).</xs:documentation>
            </xs:annotation>
@@ -209,7 +209,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="status" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="status" minOccurs="1" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The status code returned by processing this entry.</xs:documentation>
            </xs:annotation>
@@ -219,7 +219,7 @@
               <xs:documentation xml:lang="en">The location header created by processing this operation.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="etag" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="etag" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The etag for the resource, it the operation for the entry produced a versioned resource.</xs:documentation>
            </xs:annotation>

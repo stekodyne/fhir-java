@@ -54,17 +54,17 @@
               <xs:documentation xml:lang="en">An absolute URL that is used to identify this conformance statement when it is referenced in a specification, model, design or an instance. This SHALL be a URL, SHOULD be globally unique, and SHOULD be an address at which this conformance statement is (or will be) published.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="version" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="version" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The identifier that is used to identify this version of the conformance statement when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the profile author manually and the value should be a timestamp.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">A free text natural language name identifying the conformance statement.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="status" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="status" minOccurs="0" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">The status of this conformance statement.</xs:documentation>
            </xs:annotation>
@@ -74,7 +74,7 @@
               <xs:documentation xml:lang="en">A flag to indicate that this conformance statement is authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="publisher" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="publisher" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The name of the individual or organization that published the conformance.</xs:documentation>
            </xs:annotation>
@@ -89,17 +89,17 @@
               <xs:documentation xml:lang="en">The date  (and optionally time) when the conformance statement was published. The date must change when the business version changes, if it does, and it must change if the status code changes. In addition, it should change when the substantive content of the conformance statement changes.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">A free text natural language description of the conformance statement and its use. Typically, this is used when the conformance statement describes a desired rather than an actual solution, for example as a formal expression of requirements as part of an RFP.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="requirements" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="requirements" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Explains why this conformance statement is needed and why it's been constrained as it has.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="copyright" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="copyright" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">A copyright statement relating to the conformance statement and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the details of the system described by the conformance statement.</xs:documentation>
            </xs:annotation>
@@ -119,7 +119,7 @@
               <xs:documentation xml:lang="en">Identifies a specific implementation instance that is described by the conformance statement - i.e. a particular installation, rather than the capabilities of a software program.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="fhirVersion" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="fhirVersion" minOccurs="1" maxOccurs="1" type="id">
             <xs:annotation>
               <xs:documentation xml:lang="en">The version of the FHIR specification on which this conformance statement is based.</xs:documentation>
            </xs:annotation>
@@ -129,7 +129,7 @@
               <xs:documentation xml:lang="en">A code that indicates whether the application accepts unknown elements or extensions when reading resources.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="format" minOccurs="1" maxOccurs="unbounded" type="string-primitive">
+          <xs:element name="format" minOccurs="1" maxOccurs="unbounded" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">A list of the formats supported by this implementation using their content types.</xs:documentation>
            </xs:annotation>
@@ -165,7 +165,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The name of an individual to contact regarding the conformance.</xs:documentation>
            </xs:annotation>
@@ -186,12 +186,12 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Name software is known by.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="version" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="version" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The version identifier for the software covered by this statement.</xs:documentation>
            </xs:annotation>
@@ -212,7 +212,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="description" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="description" minOccurs="1" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Information about the specific installation that this conformance statement relates to.</xs:documentation>
            </xs:annotation>
@@ -238,7 +238,7 @@
               <xs:documentation xml:lang="en">Identifies whether this portion of the statement is describing ability to initiate or receive restful operations.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="documentation" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="documentation" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Information about the system's restful capabilities that apply across all applications, such as security.</xs:documentation>
            </xs:annotation>
@@ -299,7 +299,7 @@
               <xs:documentation xml:lang="en">Types of security services are supported/required by the system.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">General description of how security works.</xs:documentation>
            </xs:annotation>
@@ -320,7 +320,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="type" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="type" minOccurs="0" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">Mime type for certificate.</xs:documentation>
            </xs:annotation>
@@ -341,7 +341,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="type" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">A type of resource exposed via the restful interface.</xs:documentation>
            </xs:annotation>
@@ -386,12 +386,12 @@
               <xs:documentation xml:lang="en">A code that indicates how the server supports conditional delete.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="searchInclude" minOccurs="0" maxOccurs="unbounded" type="string-primitive">
+          <xs:element name="searchInclude" minOccurs="0" maxOccurs="unbounded" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">A list of _include values supported by the server.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="searchRevInclude" minOccurs="0" maxOccurs="unbounded" type="string-primitive">
+          <xs:element name="searchRevInclude" minOccurs="0" maxOccurs="unbounded" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">A list of _revinclude (reverse include) values supported by the server.</xs:documentation>
            </xs:annotation>
@@ -417,7 +417,7 @@
               <xs:documentation xml:lang="en">Coded identifier of the operation, supported by the system resource.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="documentation" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="documentation" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Guidance specific to the implementation of this operation, such as 'delete is a logical delete' or 'updates are only allowed with version id' or 'creates permitted from pre-authorized certificates only'.</xs:documentation>
            </xs:annotation>
@@ -433,7 +433,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The name of the search parameter used in the interface.</xs:documentation>
            </xs:annotation>
@@ -443,17 +443,17 @@
               <xs:documentation xml:lang="en">An absolute URI that is a formal reference to where this parameter was first defined, so that a client can be confident of the meaning of the search parameter (a reference to [[[SearchParameter.url]]]).</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="type" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">The type of value a search parameter refers to, and how the content is interpreted.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="documentation" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="documentation" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">This allows documentation of any distinct behaviors about how the search parameter is used.  For example, text matching algorithms.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="target" minOccurs="0" maxOccurs="unbounded" type="string-primitive">
+          <xs:element name="target" minOccurs="0" maxOccurs="unbounded" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">Types of resource (if a resource is referenced).</xs:documentation>
            </xs:annotation>
@@ -463,7 +463,7 @@
               <xs:documentation xml:lang="en">A modifier supported for the search parameter.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="chain" minOccurs="0" maxOccurs="unbounded" type="string-primitive">
+          <xs:element name="chain" minOccurs="0" maxOccurs="unbounded" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Contains the names of any search parameters which may be chained to the containing search parameter. Chained parameters may be added to search parameters of type reference, and specify that resources will only be returned if they contain a reference to a resource which matches the chained parameter value. Values for this field should be drawn from Conformance.rest.resource.searchParam.name on the target resource type.</xs:documentation>
            </xs:annotation>
@@ -484,7 +484,7 @@
               <xs:documentation xml:lang="en">A coded identifier of the operation, supported by the system.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="documentation" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="documentation" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Guidance specific to the implementation of this operation, such as limitations on the kind of transactions allowed, or information about system wide search is implemented.</xs:documentation>
            </xs:annotation>
@@ -500,7 +500,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The name of a query, which is used in the _query parameter when the query is called.</xs:documentation>
            </xs:annotation>
@@ -531,7 +531,7 @@
               <xs:documentation xml:lang="en">Length if the receiver's reliable messaging cache in minutes (if a receiver) or how long the cache length on the receiver should be (if a sender).</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="documentation" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="documentation" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Documentation about the system's messaging capabilities for this endpoint not otherwise documented by the conformance statement.  For example, process for becoming an authorized messaging exchange partner.</xs:documentation>
            </xs:annotation>
@@ -588,7 +588,7 @@
               <xs:documentation xml:lang="en">The mode of this event declaration - whether application is sender or receiver.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="focus" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="focus" minOccurs="1" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">A resource associated with the event.  This is the resource that defines the event.</xs:documentation>
            </xs:annotation>
@@ -603,7 +603,7 @@
               <xs:documentation xml:lang="en">Information about the response for this event.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="documentation" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="documentation" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Guidance on how this event is handled, such as internal system trigger points, business rules, etc.</xs:documentation>
            </xs:annotation>
@@ -624,7 +624,7 @@
               <xs:documentation xml:lang="en">Mode of this document declaration - whether application is producer or consumer.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="documentation" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="documentation" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">A description of how the application supports or uses the specified document profile.  For example, when are documents created, what action is taken with consumed documents, etc.</xs:documentation>
            </xs:annotation>

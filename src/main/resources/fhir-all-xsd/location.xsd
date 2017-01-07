@@ -59,12 +59,12 @@
               <xs:documentation xml:lang="en">active | suspended | inactive.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Name of the location as used by humans. Does not need to be unique.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Description of the Location, which helps in finding or referencing the place.</xs:documentation>
            </xs:annotation>

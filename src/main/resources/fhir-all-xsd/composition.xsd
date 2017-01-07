@@ -69,7 +69,7 @@
               <xs:documentation xml:lang="en">A categorization for the type of the composition - helps for indexing and searching. This may be implied by or derived from the code specified in the Composition Type.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="title" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="title" minOccurs="1" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Official human-readable label for the composition.</xs:documentation>
            </xs:annotation>
@@ -79,7 +79,7 @@
               <xs:documentation xml:lang="en">The workflow/clinical status of this composition. The status is a marker for the clinical standing of the document.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="confidentiality" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="confidentiality" minOccurs="0" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">The code specifying the level of confidentiality of the Composition.</xs:documentation>
            </xs:annotation>
@@ -182,7 +182,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="title" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="title" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The label for this particular section.  This will be part of the rendered content for the document, and is often used to build a table of contents.</xs:documentation>
            </xs:annotation>
@@ -197,7 +197,7 @@
               <xs:documentation xml:lang="en">A human-readable narrative that contains the attested content of the section, used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="mode" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="mode" minOccurs="0" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">How the entry list was prepared - whether it is a working list that is suitable for being maintained on an ongoing basis, or if it represents a snapshot of a list of items from another source, or whether it is a prepared list where items may be marked as added, modified or deleted.</xs:documentation>
            </xs:annotation>

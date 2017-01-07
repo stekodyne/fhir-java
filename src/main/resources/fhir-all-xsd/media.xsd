@@ -79,7 +79,7 @@
               <xs:documentation xml:lang="en">The name of the imaging view e.g. Lateral or Antero-posterior (AP).</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="deviceName" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="deviceName" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The name of the device / manufacturer of the device  that was used to make the recording.</xs:documentation>
            </xs:annotation>

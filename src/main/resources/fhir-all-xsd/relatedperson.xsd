@@ -74,7 +74,7 @@
               <xs:documentation xml:lang="en">A contact detail for the person, e.g. a telephone number or an email address.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="gender" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="gender" minOccurs="0" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">Administrative Gender - the gender that the person is considered to have for administration and record keeping purposes.</xs:documentation>
            </xs:annotation>

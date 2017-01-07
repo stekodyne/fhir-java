@@ -132,7 +132,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="lotNumber" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="lotNumber" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The assigned lot number of a batch of the specified product.</xs:documentation>
            </xs:annotation>

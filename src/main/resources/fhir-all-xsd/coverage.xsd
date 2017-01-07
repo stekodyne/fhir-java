@@ -79,17 +79,17 @@
               <xs:documentation xml:lang="en">The main (and possibly only) identifier for the coverage - often referred to as a Member Id, Subscriber Id, Certificate number or Personal Health Number or Case ID.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="group" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="group" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Identifies a style or collective of coverage issues by the underwriter, for example may be used to identify a class of coverage or employer group. May also be referred to as a Policy or Group ID.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="plan" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="plan" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Identifies a style or collective of coverage issues by the underwriter, for example may be used to identify a class of coverage or employer group. May also be referred to as a Policy or Group ID.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="subPlan" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="subPlan" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Identifies a sub-style or sub-collective of coverage issues by the underwriter, for example may be used to identify a specific employer group within a class of employers. May be referred to as a Section or Division ID.</xs:documentation>
            </xs:annotation>

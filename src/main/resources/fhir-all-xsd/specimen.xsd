@@ -115,7 +115,7 @@
               <xs:documentation xml:lang="en">Person who collected the specimen.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="comment" minOccurs="0" maxOccurs="unbounded" type="string-primitive">
+          <xs:element name="comment" minOccurs="0" maxOccurs="unbounded" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">To communicate any details or issues encountered during the specimen collection procedure.</xs:documentation>
            </xs:annotation>
@@ -153,7 +153,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Textual description of procedure.</xs:documentation>
            </xs:annotation>
@@ -184,7 +184,7 @@
               <xs:documentation xml:lang="en">Id for container. There may be multiple; a manufacturer's bar code, lab assigned identifier, etc. The container ID may differ from the specimen id in some circumstances.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Textual description of the container.</xs:documentation>
            </xs:annotation>

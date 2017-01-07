@@ -84,7 +84,7 @@
               <xs:documentation xml:lang="en">A category assigned to the condition.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="clinicalStatus" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="clinicalStatus" minOccurs="0" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">The clinical status of the condition.</xs:documentation>
            </xs:annotation>
@@ -107,7 +107,7 @@
             <xs:element name="onsetQuantity" type="Age"/>
             <xs:element name="onsetPeriod" type="Period"/>
             <xs:element name="onsetRange" type="Range"/>
-            <xs:element name="onsetString" type="string-primitive"/>
+            <xs:element name="onsetString" type="string"/>
           </xs:choice>
           <xs:choice minOccurs="0" maxOccurs="1" >
             <xs:annotation>
@@ -118,7 +118,7 @@
             <xs:element name="abatementBoolean" type="boolean"/>
             <xs:element name="abatementPeriod" type="Period"/>
             <xs:element name="abatementRange" type="Range"/>
-            <xs:element name="abatementString" type="string-primitive"/>
+            <xs:element name="abatementString" type="string"/>
           </xs:choice>
           <xs:element name="stage" type="Condition.Stage" minOccurs="0" maxOccurs="1">
             <xs:annotation>
@@ -135,7 +135,7 @@
               <xs:documentation xml:lang="en">The anatomical location where this condition manifests itself.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="notes" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="notes" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Additional information about the Condition. This is a general notes/comments entry  for description of the Condition, its diagnosis and prognosis.</xs:documentation>
            </xs:annotation>

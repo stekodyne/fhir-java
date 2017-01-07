@@ -145,7 +145,7 @@
               <xs:documentation xml:lang="en">Clinical symptoms and/or signs that are observed or associated with the adverse reaction event.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Text description about the reaction as a whole, including details of the manifestation if required.</xs:documentation>
            </xs:annotation>

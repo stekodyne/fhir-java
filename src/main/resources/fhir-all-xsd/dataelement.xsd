@@ -59,17 +59,17 @@
               <xs:documentation xml:lang="en">Formal identifier that is used to identify this data element when it is represented in other formats, or referenced in a specification, model, design or an instance.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="version" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="version" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The identifier that is used to identify this version of the data element when it is referenced in a StructureDefinition, Questionnaire or instance. This is an arbitrary value managed by the definition author manually.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The term used by humans to refer to the data element.  Should ideally be unique within the context in which the data element is expected to be used.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="status" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="status" minOccurs="1" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">The status of the data element.</xs:documentation>
            </xs:annotation>
@@ -79,7 +79,7 @@
               <xs:documentation xml:lang="en">A flag to indicate that this search data element definition is authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="publisher" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="publisher" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The name of the individual or organization that published the data element.</xs:documentation>
            </xs:annotation>
@@ -99,7 +99,7 @@
               <xs:documentation xml:lang="en">The content was developed with a focus and intent of supporting the contexts that are listed. These terms may be used to assist with indexing and searching of data element definitions.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="copyright" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="copyright" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">A copyright statement relating to the definition of the data element. Copyright statements are generally legal restrictions on the use and publishing of the details of the definition of the data element.</xs:documentation>
            </xs:annotation>
@@ -130,7 +130,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The name of an individual to contact regarding the data element.</xs:documentation>
            </xs:annotation>
@@ -151,7 +151,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="identity" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="identity" minOccurs="1" maxOccurs="1" type="id">
             <xs:annotation>
               <xs:documentation xml:lang="en">An internal id that is used to identify this mapping set when specific mappings are made on a per-element basis.</xs:documentation>
            </xs:annotation>
@@ -161,12 +161,12 @@
               <xs:documentation xml:lang="en">An absolute URI that identifies the specification that this mapping is expressed to.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">A name for the specification that is being mapped to.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="comments" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="comments" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Comments about this mapping, including version notes, issues, scope limitations, and other important notes for usage.</xs:documentation>
            </xs:annotation>

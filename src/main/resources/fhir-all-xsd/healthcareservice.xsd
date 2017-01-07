@@ -74,17 +74,17 @@
               <xs:documentation xml:lang="en">The location where this healthcare service may be provided.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="serviceName" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="serviceName" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Further description of the service as it would be presented to a consumer while searching.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="comment" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="comment" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Any additional description of the service and/or any specific issues not covered by the other attributes, which can be displayed as further detail under the serviceName.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="extraDetails" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="extraDetails" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Extra details about the service that can't be placed in the other fields.</xs:documentation>
            </xs:annotation>
@@ -114,12 +114,12 @@
               <xs:documentation xml:lang="en">Does this service have specific eligibility requirements that need to be met in order to use the service?</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="eligibilityNote" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="eligibilityNote" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Describes the eligibility conditions for the service.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="programName" minOccurs="0" maxOccurs="unbounded" type="string-primitive">
+          <xs:element name="programName" minOccurs="0" maxOccurs="unbounded" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Program Names that can be used to categorize the service.</xs:documentation>
            </xs:annotation>
@@ -134,7 +134,7 @@
               <xs:documentation xml:lang="en">Ways that the service accepts referrals, if this is not provided then it is implied that no referral is required.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="publicKey" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="publicKey" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The public part of the 'keys' allocated to an Organization by an accredited body to support secure exchange of data over the internet. To be provided by the Organization, where available.</xs:documentation>
            </xs:annotation>
@@ -154,7 +154,7 @@
               <xs:documentation xml:lang="en">The HealthcareService is not available during this period of time due to the provided reason.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="availabilityExceptions" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="availabilityExceptions" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">A description of site availability exceptions, e.g. public holiday availability. Succinctly describing all possible exceptions to normal site availability as details in the available Times and not available Times.</xs:documentation>
            </xs:annotation>
@@ -222,7 +222,7 @@
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="description" minOccurs="1" maxOccurs="1" type="string-primitive">
+          <xs:element name="description" minOccurs="1" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The reason that can be presented to the user as to why this time is not available.</xs:documentation>
            </xs:annotation>

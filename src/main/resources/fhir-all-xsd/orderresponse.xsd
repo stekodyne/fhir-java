@@ -74,7 +74,7 @@
               <xs:documentation xml:lang="en">What this response says about the status of the original order.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string-primitive">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Additional description about the response - e.g. a text description provided by a human user when making decisions about the order.</xs:documentation>
            </xs:annotation>

@@ -129,7 +129,7 @@
             <xs:annotation>
               <xs:documentation xml:lang="en">A communicated content (or for multi-part communications, one portion of the communication).</xs:documentation>
             </xs:annotation>
-            <xs:element name="contentString" type="string-primitive"/>
+            <xs:element name="contentString" type="string"/>
             <xs:element name="contentAttachment" type="Attachment"/>
             <xs:element name="contentReference" type="Reference"/>
           </xs:choice>
