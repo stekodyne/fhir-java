@@ -1,19 +1,27 @@
-<bindings xmlns="http://java.sun.com/xml/ns/jaxb"
+<jxb:bindings xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
           xmlns:xs="http://www.w3.org/2001/XMLSchema"
           version="2.1">
 
-    <bindings schemaLocation="fhir-xhtml.xsd" version="1.0.2">
-        <bindings node="//xs:attributeGroup[@name='i18n']">
-            <bindings node=".//xs:attribute[@name='lang']">
-                <property name="language"/>
-            </bindings>
-        </bindings>
+    <jxb:globalBindings choiceContentProperty="true" />
 
-        <bindings node="//xs:element[@name='bdo']">
-            <bindings node=".//xs:attribute[@name='lang']">
-                <property name="language"/>
-            </bindings>
-        </bindings>
+    <jxb:bindings schemaLocation="fhir-xhtml.xsd" version="1.0.2">
+        <jxb:bindings node="//xs:attributeGroup[@name='i18n']">
+            <jxb:bindings node=".//xs:attribute[@name='lang']">
+                <jxb:property name="language" />
+            </jxb:bindings>
+        </jxb:bindings>
 
-    </bindings>
-</bindings>
+        <jxb:bindings node="//xs:element[@name='bdo']">
+            <jxb:bindings node=".//xs:attribute[@name='lang']">
+                <jxb:property name="language" />
+            </jxb:bindings>
+        </jxb:bindings>
+    </jxb:bindings>
+
+    <jxb:bindings>
+        <jxb:bindings schemaLocation="fhir-base.xsd" node="//xs:complexType[@name='ResourceContainer']/xs:choice">
+            <jxb:property name="Resource"/>
+        </jxb:bindings>
+    </jxb:bindings>
+
+</jxb:bindings>
