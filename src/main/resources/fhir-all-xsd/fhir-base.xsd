@@ -323,7 +323,6 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-
   <xs:complexType name="ResourceContainer">
     <xs:choice>
       <xs:element ref="Account"/>

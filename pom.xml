@@ -6,7 +6,20 @@
 
     <groupId>com.csra</groupId>
     <artifactId>fhir</artifactId>
-    <version>1.3-SNAPSHOT</version>
+    <version>1.4-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.8.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.8.3</version>
+        </dependency>
+    </dependencies>
     <packaging>jar</packaging>
 
     <name>fhir-java</name>
@@ -16,6 +29,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        <castor-xml.version>1.4.1</castor-xml.version>
+        <castor-codegen.version>1.4.1</castor-codegen.version>
     </properties>
 
     <distributionManagement>
