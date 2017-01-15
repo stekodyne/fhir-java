@@ -2,6 +2,8 @@
           xmlns:xs="http://www.w3.org/2001/XMLSchema"
           version="2.1">
 
+    <jxb:globalBindings choiceContentProperty="true" />
+
     <jxb:bindings schemaLocation="fhir-xhtml.xsd" version="1.0.2">
         <jxb:bindings node="//xs:attributeGroup[@name='i18n']">
             <jxb:bindings node=".//xs:attribute[@name='lang']">
@@ -13,6 +15,12 @@
             <jxb:bindings node=".//xs:attribute[@name='lang']">
                 <jxb:property name="language" />
             </jxb:bindings>
+        </jxb:bindings>
+    </jxb:bindings>
+
+    <jxb:bindings>
+        <jxb:bindings schemaLocation="fhir-base.xsd" node="//xs:complexType[@name='ResourceContainer']/xs:choice">
+            <jxb:property name="SpecificResource" />
         </jxb:bindings>
     </jxb:bindings>
 

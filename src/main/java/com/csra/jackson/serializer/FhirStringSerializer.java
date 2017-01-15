@@ -16,12 +16,12 @@ public class FhirStringSerializer  extends StdSerializer<String> {
         this(null);
     }
 
-    public FhirStringSerializer(Class<String> string) {
-        super(string);
+    public FhirStringSerializer(Class<String> input) {
+        super(input);
     }
 
     @Override
-    public void serialize(String string, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
-        jsonGenerator.writeString(string.getValue());
+    public void serialize(String input, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
+        jsonGenerator.writeString(input.getValue());
     }
 }

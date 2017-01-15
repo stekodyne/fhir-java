@@ -16,14 +16,14 @@ public class FhirMedicationOrderStatusSerializer extends StdSerializer<Medicatio
         this(null);
     }
 
-    public FhirMedicationOrderStatusSerializer(Class<MedicationOrderStatus> status) {
-        super(status);
+    public FhirMedicationOrderStatusSerializer(Class<MedicationOrderStatus> input) {
+        super(input);
     }
 
     @Override
-    public void serialize(MedicationOrderStatus status, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
-        if (status.getValue() != null) {
-            jsonGenerator.writeString(status.getValue().value());
+    public void serialize(MedicationOrderStatus input, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
+        if (input.getValue() != null) {
+            jsonGenerator.writeString(input.getValue().value());
         } else {
             jsonGenerator.writeNull();
         }

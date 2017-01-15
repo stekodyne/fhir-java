@@ -16,12 +16,12 @@ public class FhirCodeSerializer extends StdSerializer<Code> {
         this(null);
     }
 
-    public FhirCodeSerializer(Class<Code> code) {
-        super(code);
+    public FhirCodeSerializer(Class<Code> input) {
+        super(input);
     }
 
     @Override
-    public void serialize(Code code, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
-        jsonGenerator.writeString(code.getValue());
+    public void serialize(Code input, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
+        jsonGenerator.writeString(input.getValue());
     }
 }

@@ -7,8 +7,8 @@ Java classes based off of the HL7 FHIR DSTU2 specification
 ### Java Classes Generation
 
 ```
-cd <project-root>/src/main/resources/fhir-all-xsd
-xjc.exe -XautoNameResolution -d ../../java -p com.csra.fhir -b binding.xjb fhir-all.xsd
+cd <project-root>
+xjc -XautoNameResolution -d src/main/java -p com.csra.fhir -b src/main/resources/fhir-all-xsd/binding.xjb src/main/resources/fhir-all-xsd/fhir-all.xsd
 ```
 
 ### Installing
