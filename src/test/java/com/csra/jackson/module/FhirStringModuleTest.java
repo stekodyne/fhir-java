@@ -1,7 +1,6 @@
 package com.csra.jackson.module;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.junit.Assert.assertNotNull;

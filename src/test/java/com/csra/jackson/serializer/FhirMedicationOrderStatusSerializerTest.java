@@ -1,9 +1,7 @@
 package com.csra.jackson.serializer;
 
-import com.csra.fhir.Boolean;
 import com.csra.fhir.MedicationOrderStatus;
 import com.csra.fhir.MedicationOrderStatusList;
-import com.csra.jackson.module.FhirBooleanModule;
 import com.csra.jackson.module.FhirMedicationOrderStatusModule;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;

@@ -11,6 +11,12 @@ cd <project-root>
 xjc -XautoNameResolution -d src/main/java -p com.csra.fhir -b src/main/resources/fhir-all-xsd/binding.xjb src/main/resources/fhir-all-xsd/fhir-all.xsd
 ```
 
+### Test Generation
+
+```
+mvn -DmemoryInMB=2000 -Dcores=4 -DtimeInMinutesPerClass=2 evosuite:generate evosuite:export
+```
+
 ### Installing
 
 Will compile and install the .jar into you local Maven repository.

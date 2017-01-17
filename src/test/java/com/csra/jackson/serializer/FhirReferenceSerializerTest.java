@@ -2,8 +2,8 @@ package com.csra.jackson.serializer;
 
 import com.csra.fhir.Reference;
 import com.csra.fhir.String;
-import com.csra.jackson.module.FhirStringModule;
 import com.csra.jackson.module.FhirReferenceModule;
+import com.csra.jackson.module.FhirStringModule;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
 import org.junit.Test;
