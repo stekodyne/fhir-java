@@ -25,12 +25,6 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.evosuite</groupId>
-            <artifactId>evosuite-standalone-runtime</artifactId>
-            <version>${evosuite.version}</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
     <packaging>jar</packaging>
 
@@ -43,7 +37,6 @@
         <java.version>1.8</java.version>
         <castor-xml.version>1.4.1</castor-xml.version>
         <castor-codegen.version>1.4.1</castor-codegen.version>
-        <evosuite.version>1.0.3</evosuite.version>
     </properties>
 
     <distributionManagement>
@@ -58,44 +51,5 @@
             <url>http://10.255.242.29:8081/artifactory/libs-snapshot-local</url>
         </snapshotRepository>
     </distributionManagement>
-
-    <repositories>
-        <repository>
-            <id>EvoSuite</id>
-            <name>EvoSuite Repository</name>
-            <url>http://www.evosuite.org/m2</url>
-        </repository>
-    </repositories>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.evosuite.plugins</groupId>
-                <artifactId>evosuite-maven-plugin</artifactId>
-                <version>${evosuite.version}</version>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.17</version>
-                <configuration>
-                    <properties>
-                        <property>
-                            <name>listener</name>
-                            <value>org.evosuite.runtime.InitializingListener</value>
-                        </property>
-                    </properties>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>EvoSuite</id>
-            <name>EvoSuite Repository</name>
-            <url>http://www.evosuite.org/m2</url>
-        </pluginRepository>
-    </pluginRepositories>
 
 </project>
