@@ -39,9 +39,9 @@ public class FhirResourceContainerSerializerTest {
         name.getFamily().add(last);
         name.getGiven().add(first);
         patient.getName().add(name);
-        input.setSpecificResource(patient);
+        input.setPatient(patient);
 
-        assertEquals("{\"contained\":[],\"extension\":[],\"modifierExtension\":[],\"identifier\":[],\"name\":[{\"extension\":[],\"id\":null,\"use\":null,\"text\":null,\"family\":[\"McTesterson\"],\"given\":[\"Tester\"],\"prefix\":[],\"suffix\":[],\"period\":null}],\"telecom\":[],\"address\":[],\"photo\":[],\"contact\":[],\"communication\":[],\"careProvider\":[],\"link\":[],\"resourceType\":\"class com.csra.fhir.Patient\"}", objectMapper.writeValueAsString(input));
+        assertEquals("{\"contained\":[],\"extension\":[],\"modifierExtension\":[],\"identifier\":[],\"name\":[{\"extension\":[],\"id\":null,\"use\":null,\"text\":null,\"family\":[\"McTesterson\"],\"given\":[\"Tester\"],\"prefix\":[],\"suffix\":[],\"period\":null}],\"telecom\":[],\"address\":[],\"photo\":[],\"contact\":[],\"communication\":[],\"careProvider\":[],\"link\":[],\"resourceType\":\"Patient\"}", objectMapper.writeValueAsString(input));
     }
 
 }

@@ -1,5 +1,6 @@
 package com.csra.jackson.serializer;
 
+import com.csra.fhir.DomainResource;
 import com.csra.fhir.Resource;
 import com.csra.fhir.ResourceContainer;
 import com.fasterxml.jackson.core.JsonGenerator;
@@ -27,16 +28,25 @@ public class FhirResourceContainerSerializer extends StdSerializer<ResourceConta
 
     @Override
     public void serialize(ResourceContainer input, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
-        if (input.getSpecificResource() != null) {
+        DomainResource domainResource = null;
 
+        if (input.getPatient() != null) {
+            domainResource = input.getPatient();
+        } else if (input.getMedicationOrder() != null) {
+            domainResource = input.getMedicationOrder();
+        } else {
+
+        }
+
+        if (domainResource != null) {
             jsonGenerator.writeStartObject();
-            JavaType javaType = serializerProvider.constructType(input.getSpecificResource().getClass());
+            JavaType javaType = serializerProvider.constructType(domainResource.getClass());
             BeanDescription beanDescription = serializerProvider.getConfig().introspect(javaType);
             JsonSerializer<Object> serializer = BeanSerializerFactory.instance.findBeanSerializer(serializerProvider,
                     javaType,
                     beanDescription);
-            serializer.unwrappingSerializer(null).serialize(input.getSpecificResource(), jsonGenerator, serializerProvider);
-            jsonGenerator.writeStringField("resourceType", input.getSpecificResource().getClass().toString());
+            serializer.unwrappingSerializer(null).serialize(domainResource, jsonGenerator, serializerProvider);
+            jsonGenerator.writeStringField("resourceType", domainResource.getClass().getSimpleName());
             jsonGenerator.writeEndObject();
 
         } else {
